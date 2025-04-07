@@ -853,7 +853,25 @@ public:
 
 	//checks if a move is LEGAL (allowed)
 	//castling will be handled SEPERATELY
+	bool is_legal(int row, int newrow, int col, int newcol){
+		//if the desired position is not on board, then of course it's illegal
+		if(onboard(newrow, newcol) == 0){
+			return 0;
+		}
 
+		//invalid moves are not legal...
+		if(validmove(row, col, newrow, newcol) == 0){
+			return 0;
+		}
+
+		//if it leads to checking yourself, then obviously it isn't allowed
+		if(leads_to_check(row, newrow, col, newcol)){
+			return 0;
+		}
+
+
+		return 1;
+	}
 
 };
 
