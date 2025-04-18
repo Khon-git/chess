@@ -76,7 +76,6 @@ Piece(std::string c, std::string v, int n){
         std::string v;
         if(canpromote == 1){
             
-            //array of valid pieces, with a gibberish last entry because idk how iterators work LMAOOOOO
             std::string arr[] = {"Queen", "Bishop", "Knight", "Rook"};
             std::cout << "Select a piece to promote this pawn to: " << std::endl;
 
