@@ -1,7 +1,7 @@
 # chess
 
 Hello! :)
-This is a simple terminal based chess for 2 players, written in C++
+This is a simple terminal based chess for 2 players, written in C++.
 Admittedly, I am quite the novice when it comes to this language, so there may be some questionable syntax choices used. 
 
 Anyways, if you aren't familiar with how to run C++ programs, you need a compiler to compile the code first.
